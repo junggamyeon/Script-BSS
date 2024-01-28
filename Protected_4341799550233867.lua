@@ -5096,10 +5096,6 @@ local SpawnTable = {}
 pcall(function() 
     game:GetService("Workspace").Decorations["30BeeZone"].Pit.TouchInterest:Destroy()
 end)
-for k,v in pairs(game:GetService("Workspace")["Invisible Walls"]:GetChildren()) do v:Destroy() end
-for k,v in pairs(game:GetService("Workspace").Territories:GetChildren()) do v:Destroy() end
-
-for k,v in pairs(game:GetService("Workspace").Map.OuterInvisWalls:GetChildren()) do v:Destroy() end
 local TvkStatCache = game:GetService("ReplicatedStorage").Events.RetrievePlayerStats:InvokeServer()
 spawn(function() 
     while wait(1) do 
